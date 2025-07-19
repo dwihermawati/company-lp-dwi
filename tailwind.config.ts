@@ -44,6 +44,10 @@ const customTextPlugin = plugin(({ addUtilities }) => {
 export default {
   theme: {
     extend: {
+      boxShadow: {
+        'blue-glow': '0 0 17px rgba(17, 121, 252, 0.6)',
+        // 'blue-glow': '0 4px 24px 0 rgba(17, 121, 252, 0.32)',
+      },
       animation: {
         marquee: 'marquee var(--duration) linear infinite',
         'marquee-vertical': 'marquee-vertical var(--duration) linear infinite',
