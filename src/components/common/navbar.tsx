@@ -63,7 +63,7 @@ const Navbar = () => {
           />
         </Link>
         <nav className='hidden lg:block'>
-          <ul className='flex-start gap-4'>
+          <ul className='flex-start gap-4 whitespace-nowrap'>
             {navigationData.map((nav) => (
               <Link
                 key={nav.label}

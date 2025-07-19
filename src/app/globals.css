@@ -213,7 +213,7 @@ html {
 }
 
 body {
-  @apply bg-neutral-600 text-sm font-normal text-neutral-100;
+  @apply bg-white text-sm font-normal text-neutral-100;
   font-family: 'Sora', sans-serif;
   /* font-family: var(--font-poppins); */
 }
