@@ -1,3 +1,4 @@
+import DecorationBg from '@/components/hero/DecorationBg';
 import IconPosition from '@/components/hero/IconPosition';
 import { Button } from '@/components/ui/button';
 import { generateClamp } from '@/function/generate-clamp';
@@ -7,25 +8,26 @@ import React from 'react';
 const Hero = () => {
   return (
     <section
-      className='relative w-full bg-black'
+      className='relative w-full overflow-hidden bg-black'
       id='home'
       style={{ height: generateClamp(852, 1024, 1440) }}
     >
+      <DecorationBg />
       <div
-        className='mx-auto h-full max-w-360 border border-blue-500'
+        className='relative mx-auto h-full max-w-360 overflow-hidden'
         style={{
           paddingTop: generateClamp(205, 300, 1440),
           paddingBottom: generateClamp(239, 354, 1440),
         }}
       >
-        {/* <div className='mx-auto h-fit max-w-[906px] border border-amber-500'> */}
+        <IconPosition />
+        <div className='animate-twinkle pointer-events-none absolute top-[5.2%] left-[3.6%] z-0 h-[835px] w-[1323px] bg-[url("/images/dot-hero-decoration.svg")] bg-contain bg-repeat-x' />
         <div
           style={{
             gap: generateClamp(16, 40, 1440),
           }}
-          className='flex-center relative mx-auto h-fit max-w-[906px] flex-col border border-amber-500 max-lg:mx-5'
+          className='flex-center relative z-30 mx-auto h-fit max-w-[906px] flex-col max-lg:mx-5'
         >
-          <IconPosition />
           <div className='flex-center flex-col gap-4'>
             <div className='rounded-full bg-gradient-to-r from-[#0093DD]/0 to-[#0093DD]/100 p-[1px]'>
               <div className='flex-center h-8 w-fit gap-1.5 rounded-full bg-black px-4 py-1'>
@@ -59,10 +61,9 @@ const Hero = () => {
               expert mentorship.
             </p>
           </div>
-          <Button className='w-full sm:w-60'>Join Now</Button>
+          <Button className='animate-breathe w-full sm:w-60'>Join Now</Button>
         </div>
       </div>
-      {/* </div> */}
     </section>
   );
 };

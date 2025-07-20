@@ -51,6 +51,8 @@ export default {
       animation: {
         marquee: 'marquee var(--duration) linear infinite',
         'marquee-vertical': 'marquee-vertical var(--duration) linear infinite',
+        breathe: 'breathe 4s ease-in-out infinite',
+        twinkle: 'twinkle 3s infinite ease-in-out;',
       },
       keyframes: {
         marquee: {
@@ -60,6 +62,20 @@ export default {
         'marquee-vertical': {
           from: { transform: 'translateY(0)' },
           to: { transform: 'translateY(calc(-100% - var(--gap)))' },
+        },
+        breathe: {
+          '0%, 100%': { transform: 'scale(1)', opacity: '1' },
+          '50%': { transform: 'scale(1.05)', opacity: '0.95' },
+        },
+        twinkle: {
+          '0%, 100%': {
+            opacity: 0.6,
+            filter: 'brightness(1.7)',
+          },
+          '50%': {
+            opacity: 1,
+            filter: 'brightness(0.9)',
+          },
         },
       },
     },
