@@ -21,9 +21,10 @@ const DecorationBg = () => {
       <Image
         src='/images/texture-hero-decoration.svg'
         alt=''
-        width={1440}
-        height={1024}
+        width={0}
+        height={0}
         className='pointer-events-none absolute top-0 left-1/2 z-5 h-[1024px] w-full -translate-x-1/2 object-cover mix-blend-color-burn'
+        priority
       />
       <Image
         src='/images/bg-vector-hero-decoration.svg'

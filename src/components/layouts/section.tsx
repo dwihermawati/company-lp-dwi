@@ -1,0 +1,52 @@
+import React from 'react';
+
+import { cn } from '@/lib/utils';
+import { generateClamp } from '@/function/generate-clamp';
+
+type SectionProps = {
+  children?: React.ReactNode;
+  title: string;
+  subtitle: string;
+  id?: string;
+  className?: string;
+};
+
+export const Section: React.FC<SectionProps> = ({
+  children,
+  title,
+  subtitle,
+  id,
+  className,
+}) => {
+  return (
+    <div
+      id={id}
+      className={cn('custom-container', className)}
+      style={{
+        paddingBlock: generateClamp(40, 80, 1248),
+      }}
+    >
+      <div className='text-center'>
+        <h2
+          className='font-extrabold text-neutral-950'
+          style={{
+            fontSize: generateClamp(24, 36, 1248),
+            lineHeight: generateClamp(36, 44, 1248),
+          }}
+        >
+          {title}
+        </h2>
+        <p
+          className='font-regular mt-4 text-neutral-800'
+          style={{
+            fontSize: generateClamp(14, 16, 1248),
+            lineHeight: generateClamp(28, 30, 1248),
+          }}
+        >
+          {subtitle}
+        </p>
+      </div>
+      <div style={{ marginTop: generateClamp(24, 48, 1248) }}>{children}</div>
+    </div>
+  );
+};

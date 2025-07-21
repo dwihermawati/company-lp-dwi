@@ -11,7 +11,8 @@ const buttonVariants = cva(
       variant: {
         default:
           'bg-primary-300 text-sm-semibold text-neutral-25 rounded-full hover:shadow-blue-glow text-center',
-        icon: 'border-primary-300 border rounded-full  hover:scale-105 disabled:border-neutral-300',
+        outline:
+          'border-primary-300 border rounded-full  hover:scale-105 disabled:border-neutral-300',
       },
       size: {
         default: 'h-11 p-2',

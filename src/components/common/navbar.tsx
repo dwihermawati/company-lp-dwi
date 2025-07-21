@@ -15,7 +15,7 @@ import {
   SheetHeader,
 } from '@/components/ui/sheet';
 
-import { navigationData } from '@/components/constants/navigation-data';
+import { navigationData } from '@/constants/navigation-data';
 import { generateClamp } from '@/function/generate-clamp';
 import { useActiveSection } from '@/hooks/useActiveSection';
 import { cn } from '@/lib/utils';
