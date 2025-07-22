@@ -53,6 +53,8 @@ export default {
         'marquee-vertical': 'marquee-vertical var(--duration) linear infinite',
         breathe: 'breathe 4s ease-in-out infinite',
         twinkle: 'twinkle 3s infinite ease-in-out;',
+        wiggle: 'wiggle 0.5s ease-in-out infinite',
+        wiggleY: 'wiggleY 0.9s ease-in-out infinite',
       },
       keyframes: {
         marquee: {
@@ -76,6 +78,14 @@ export default {
             opacity: 1,
             filter: 'brightness(0.9)',
           },
+        },
+        wiggle: {
+          '0%, 100%': { transform: 'rotate(-3deg)' },
+          '50%': { transform: 'rotate(3deg)' },
+        },
+        wiggleY: {
+          '0%, 100%': { transform: 'translateY(-5%)' },
+          '50%': { transform: 'translateY(5%)' },
         },
       },
     },

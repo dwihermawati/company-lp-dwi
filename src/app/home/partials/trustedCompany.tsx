@@ -19,7 +19,7 @@ const TrustedCompany = () => {
       title='Trusted by 1,000+ Hiring Partners Worldwide'
       subtitle='From global tech companies to fast-growing startups.'
       id='why-choose-us'
-      className='max-md:px-4'
+      className='max-sm:px-4'
     >
       <CompaniesMarquee />
       <CompaniesSlider />
