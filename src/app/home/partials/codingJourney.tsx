@@ -188,7 +188,7 @@ const CodingJourney = () => {
                 </div>
               ))}
               <Link
-                href='testimony'
+                href='#testimony'
                 className='w-fit transition-all duration-300 hover:brightness-115'
               >
                 <Image
@@ -218,7 +218,7 @@ const CodingJourney = () => {
             >
               {iconTechData.map((icon, index) => (
                 <Link
-                  href='module'
+                  href='#module'
                   key={index}
                   style={{
                     height: generateClamp(66.16, 79.19, 1248),

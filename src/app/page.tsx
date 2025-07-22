@@ -2,6 +2,7 @@ import Navbar from '@/components/common/navbar';
 import Hero from './home/partials/hero';
 import TrustedCompany from './home/partials/trustedCompany';
 import CodingJourney from './home/partials/codingJourney';
+import Module from './home/partials/module';
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <Hero />
       <TrustedCompany />
       <CodingJourney />
+      <Module />
     </>
   );
 };
