@@ -51,7 +51,7 @@ export default {
       animation: {
         marquee: 'marquee var(--duration) linear infinite',
         'marquee-vertical': 'marquee-vertical var(--duration) linear infinite',
-        breathe: 'breathe 4s ease-in-out infinite',
+        breathe: 'breathe 3s ease-in-out infinite',
         twinkle: 'twinkle 3s infinite ease-in-out;',
         wiggle: 'wiggle 0.5s ease-in-out infinite',
         wiggleY: 'wiggleY 0.9s ease-in-out infinite',

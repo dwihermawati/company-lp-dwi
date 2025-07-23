@@ -29,8 +29,8 @@ const DecorationBg = () => {
       <Image
         src='/images/bg-vector-hero-decoration.svg'
         alt=''
-        width={1440}
-        height={1710}
+        width={0}
+        height={0}
         style={{
           height: generateClamp(1422, 1710, 1440),
         }}

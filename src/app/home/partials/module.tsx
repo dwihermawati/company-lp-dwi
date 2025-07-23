@@ -111,7 +111,7 @@ const Card: React.FC<CardProps> = ({
         <h4 className='text-lg-semibold text-neutral-950 group-hover:text-white'>
           {name}
         </h4>
-        <p className='text-sm-regular mt-1 text-neutral-700 group-hover:text-white'>
+        <p className='text-sm-regular mt-1 line-clamp-2 h-14 text-neutral-700 group-hover:text-white'>
           {description}
         </p>
         <Button

@@ -1,11 +1,16 @@
+'use client';
+
 import DecorationBg from '@/components/hero/DecorationBg';
 import IconPosition from '@/components/hero/IconPosition';
 import { Button } from '@/components/ui/button';
+import DialogOpen from '@/components/ui/dialogOpen';
 import { generateClamp } from '@/function/generate-clamp';
 import { Icon } from '@iconify/react';
-import React from 'react';
+import React, { useState } from 'react';
 
 const Hero = () => {
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
+
   return (
     <section
       className='relative w-full overflow-hidden bg-black'
@@ -29,7 +34,7 @@ const Hero = () => {
           className='flex-center relative z-30 mx-auto h-fit max-w-[906px] flex-col max-lg:mx-5'
         >
           <div className='flex-center flex-col gap-4'>
-            <div className='rounded-full bg-gradient-to-r from-[#0093DD]/0 to-[#0093DD]/100 p-[1px]'>
+            <div className='animate-breathe rounded-full bg-gradient-to-r from-[#0093DD]/0 to-[#0093DD]/100 p-[1px]'>
               <div className='flex-center h-8 w-fit gap-1.5 rounded-full bg-black px-4 py-1'>
                 <Icon icon='solar:cup-bold' className='size-4 text-[#F3B64C]' />
                 <span className='text-neutral-25 text-xs-medium md:text-sm-medium'>
@@ -61,9 +66,23 @@ const Hero = () => {
               expert mentorship.
             </p>
           </div>
-          <Button className='animate-breathe w-full sm:w-60'>Join Now</Button>
+          <Button
+            className='w-full hover:scale-103 hover:font-bold sm:w-60'
+            withMotion
+            stopMotionOnHover
+            motionProps={{
+              whileTap: {
+                y: [0, -3, 3, -3, 0],
+                transition: { duration: 0.3 },
+              },
+            }}
+            onClick={() => setIsDialogOpen(true)}
+          >
+            Join Now
+          </Button>
         </div>
       </div>
+      <DialogOpen open={isDialogOpen} onOpenChange={setIsDialogOpen} />
     </section>
   );
 };

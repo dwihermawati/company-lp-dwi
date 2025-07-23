@@ -2,6 +2,7 @@ import clsx from 'clsx';
 import type { Metadata } from 'next';
 import { Sora } from 'next/font/google';
 import './globals.css';
+import { ToastContainer } from 'react-toastify';
 
 export const metadata: Metadata = {
   title: 'Company Profile',
@@ -22,7 +23,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={clsx(sora.variable, 'antialiased')}>{children}</body>
+      <body className={clsx(sora.variable, 'antialiased')}>
+        <ToastContainer position='top-center' autoClose={3000} />
+        {children}
+      </body>
     </html>
   );
 }

@@ -1,9 +1,13 @@
+'use client';
+
 import { Button } from '@/components/ui/button';
+import DialogOpen from '@/components/ui/dialogOpen';
 import { generateClamp } from '@/function/generate-clamp';
-import Image from 'next/image';
-import React from 'react';
+import React, { useState } from 'react';
 
 const CTA = () => {
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
+
   return (
     <div className='relative w-full overflow-hidden bg-black'>
       <div className='absolute z-10 size-full bg-[url("/images/cta-decoration-bg.png")] bg-cover bg-center opacity-50' />
@@ -26,7 +30,7 @@ const CTA = () => {
           </p>
         </div>
         <Button
-          className='w-full hover:scale-103 hover:font-bold md:w-60'
+          className='w-full hover:scale-103 hover:font-bold sm:w-60'
           withMotion
           stopMotionOnHover
           motionProps={{
@@ -35,10 +39,12 @@ const CTA = () => {
               transition: { duration: 0.3 },
             },
           }}
+          onClick={() => setIsDialogOpen(true)}
         >
           Join Now
         </Button>
       </div>
+      <DialogOpen open={isDialogOpen} onOpenChange={setIsDialogOpen} />
     </div>
   );
 };

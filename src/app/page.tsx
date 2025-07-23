@@ -7,7 +7,7 @@ import Testimony from './home/partials/testimony';
 import LearnReact from './home/partials/learnReact';
 import FAQ from './home/partials/faq';
 import CTA from './home/partials/cta';
-import Footer from './home/partials/footer';
+import Footer from '../components/common/footer';
 
 const Home = () => {
   return (
