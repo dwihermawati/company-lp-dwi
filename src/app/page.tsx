@@ -6,6 +6,8 @@ import Module from './home/partials/module';
 import Testimony from './home/partials/testimony';
 import LearnReact from './home/partials/learnReact';
 import FAQ from './home/partials/faq';
+import CTA from './home/partials/cta';
+import Footer from './home/partials/footer';
 
 const Home = () => {
   return (
@@ -18,6 +20,8 @@ const Home = () => {
       <LearnReact />
       <Testimony />
       <FAQ />
+      <CTA />
+      <Footer />
     </>
   );
 };
