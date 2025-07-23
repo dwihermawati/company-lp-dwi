@@ -108,7 +108,10 @@ const Card: React.FC<CardProps> = ({
       </div>
 
       <div style={{ padding: generateClamp(16, 20, 1248) }}>
-        <h4 className='text-lg-semibold text-neutral-950 group-hover:text-white'>
+        <h4
+          className='text-lg-semibold cursor-pointer text-neutral-950 group-hover:text-white hover:font-extrabold'
+          onClick={onClick}
+        >
           {name}
         </h4>
         <p className='text-sm-regular mt-1 line-clamp-2 h-14 text-neutral-700 group-hover:text-white'>
