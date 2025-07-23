@@ -189,7 +189,14 @@ function CarouselPrevious(props: React.ComponentProps<typeof Button>) {
       onClick={scrollPrev}
       {...props}
     >
-      <ArrowLeft />
+      <ArrowLeft
+        className={cn(
+          'transition-all duration-300',
+          canScrollPrev
+            ? 'text-primary-300 hover:text-primary-300'
+            : 'text-neutral-300'
+        )}
+      />
       <span className='sr-only'>Previous slide</span>
     </Button>
   );
@@ -207,7 +214,14 @@ function CarouselNext(props: React.ComponentProps<typeof Button>) {
       onClick={scrollNext}
       {...props}
     >
-      <ArrowRight />
+      <ArrowRight
+        className={cn(
+          'transition-all duration-300',
+          canScrollNext
+            ? 'text-primary-300 hover:text-primary-300'
+            : 'text-neutral-300'
+        )}
+      />
       <span className='sr-only'>Next slide</span>
     </Button>
   );
@@ -264,10 +278,7 @@ function CarouselNavigation({
 }: React.ComponentProps<'div'>) {
   return (
     <div
-      className={cn(
-        'mt-4 flex items-center justify-center gap-3 md:mt-8 md:gap-4',
-        className
-      )}
+      className={cn('mt-6 flex items-center justify-center gap-4', className)}
       {...props}
     >
       <CarouselPrevious />

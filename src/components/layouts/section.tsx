@@ -9,6 +9,7 @@ type SectionProps = {
   subtitle: string;
   id?: string;
   className?: string;
+  style?: React.CSSProperties;
 };
 
 export const Section: React.FC<SectionProps> = ({
@@ -17,13 +18,16 @@ export const Section: React.FC<SectionProps> = ({
   subtitle,
   id,
   className,
+  style,
 }) => {
   return (
     <div
       id={id}
       className={cn('custom-container', className)}
       style={{
-        paddingBlock: generateClamp(40, 80, 1248),
+        paddingTop: generateClamp(40, 80, 1248),
+        paddingBottom: generateClamp(40, 80, 1248),
+        ...style,
       }}
     >
       <div className='text-center'>

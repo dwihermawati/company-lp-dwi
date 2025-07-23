@@ -3,6 +3,8 @@ import Hero from './home/partials/hero';
 import TrustedCompany from './home/partials/trustedCompany';
 import CodingJourney from './home/partials/codingJourney';
 import Module from './home/partials/module';
+import Testimony from './home/partials/testimony';
+import LearnReact from './home/partials/learnReact';
 
 const Home = () => {
   return (
@@ -12,6 +14,8 @@ const Home = () => {
       <TrustedCompany />
       <CodingJourney />
       <Module />
+      <LearnReact />
+      <Testimony />
     </>
   );
 };

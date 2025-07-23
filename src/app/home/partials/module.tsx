@@ -17,7 +17,6 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
 } from '@/components/ui/alert-dialog';
-import Link from 'next/link';
 import { XIcon } from 'lucide-react';
 
 const Module = () => {
@@ -27,41 +26,43 @@ const Module = () => {
   };
 
   return (
-    <Section
-      title='Learning Frontend Developer Tools'
-      subtitle='Mastering Essential Tools for Efficient Frontend Development'
-      id='module'
-    >
-      <Cards>
-        {modulesData.map((module) => (
-          <Card
-            key={module.name}
-            imageSrc={module.imageSrc}
-            name={module.name}
-            description={module.description}
-            isSpecialSize={module.name === 'Figma'}
-            onClick={handleClick}
-          />
-        ))}
-      </Cards>
-      <AlertDialog open={dialogOpen} onOpenChange={setDialogOpen}>
-        <AlertDialogContent>
-          <AlertDialogHeader>
-            <AlertDialogTitle>Module Not Available</AlertDialogTitle>
-            <AlertDialogCancel>
-              <XIcon className='size-6 text-black hover:opacity-70' />
-            </AlertDialogCancel>
-          </AlertDialogHeader>
-          <AlertDialogDescription>
-            Sorry, this module or page is not available yet. We are working on
-            it and will update it soon. Stay tuned!
-          </AlertDialogDescription>
-          <AlertDialogFooter>
-            <AlertDialogAction className='w-50'>Back</AlertDialogAction>
-          </AlertDialogFooter>
-        </AlertDialogContent>
-      </AlertDialog>
-    </Section>
+    <div className='w-full bg-gradient-to-b from-[#0093DD]/0 to-[#0093DD]/14'>
+      <Section
+        title='Learning Frontend Developer Tools'
+        subtitle='Mastering Essential Tools for Efficient Frontend Development'
+        id='module'
+      >
+        <Cards>
+          {modulesData.map((module) => (
+            <Card
+              key={module.name}
+              imageSrc={module.imageSrc}
+              name={module.name}
+              description={module.description}
+              isSpecialSize={module.name === 'Figma'}
+              onClick={handleClick}
+            />
+          ))}
+        </Cards>
+        <AlertDialog open={dialogOpen} onOpenChange={setDialogOpen}>
+          <AlertDialogContent>
+            <AlertDialogHeader>
+              <AlertDialogTitle>Module Not Available</AlertDialogTitle>
+              <AlertDialogCancel>
+                <XIcon className='size-6 text-black hover:opacity-70' />
+              </AlertDialogCancel>
+            </AlertDialogHeader>
+            <AlertDialogDescription>
+              Sorry, this module or page is not available yet. We are working on
+              it and will update it soon. Stay tuned!
+            </AlertDialogDescription>
+            <AlertDialogFooter>
+              <AlertDialogAction className='w-50'>Back</AlertDialogAction>
+            </AlertDialogFooter>
+          </AlertDialogContent>
+        </AlertDialog>
+      </Section>
+    </div>
   );
 };
 
