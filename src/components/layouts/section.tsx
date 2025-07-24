@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { cn } from '@/lib/utils';
 import { generateClamp } from '@/function/generate-clamp';
+import { cn } from '@/lib/utils';
 
 type SectionProps = {
   children?: React.ReactNode;

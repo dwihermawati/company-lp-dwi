@@ -1,9 +1,11 @@
 'use client';
 
+import React, { useState } from 'react';
+
 import { Button } from '@/components/ui/button';
 import DialogOpen from '@/components/ui/dialogOpen';
+
 import { generateClamp } from '@/function/generate-clamp';
-import React, { useState } from 'react';
 
 const CTA = () => {
   const [isDialogOpen, setIsDialogOpen] = useState(false);

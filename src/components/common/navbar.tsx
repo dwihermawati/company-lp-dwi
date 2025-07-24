@@ -7,6 +7,7 @@ import Link from 'next/link';
 import React, { useState } from 'react';
 
 import { Button } from '@/components/ui/button';
+import DialogOpen from '@/components/ui/dialogOpen';
 import {
   Sheet,
   SheetTrigger,
@@ -19,7 +20,6 @@ import { navigationData } from '@/constants/navigation-data';
 import { generateClamp } from '@/function/generate-clamp';
 import { useActiveSection } from '@/hooks/useActiveSection';
 import { cn } from '@/lib/utils';
-import DialogOpen from '../ui/dialogOpen';
 
 const Navbar = () => {
   const { scrollY } = useScroll();

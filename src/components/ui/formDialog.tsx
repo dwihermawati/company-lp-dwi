@@ -1,16 +1,15 @@
 import { zodResolver } from '@hookform/resolvers/zod';
+import { motion, useAnimation } from 'motion/react';
+import React, { useState } from 'react';
+import { useForm } from 'react-hook-form';
+import { BeatLoader } from 'react-spinners';
+import { toast } from 'react-toastify';
+import { z } from 'zod';
+
 import { Button } from '@/components/ui/button';
 import { Form, FormField, FormItem, FormMessage } from '@/components/ui/form';
 import { Input } from '@/components/ui/input';
-import { BeatLoader } from 'react-spinners';
 import { Label } from '@/components/ui/label';
-
-import { z } from 'zod';
-
-import React, { useState } from 'react';
-import { useForm } from 'react-hook-form';
-import { toast } from 'react-toastify';
-import { motion, useAnimation } from 'motion/react';
 
 type FormDialogProps = {
   onClose: () => void;
@@ -51,7 +50,7 @@ const FormDialog: React.FC<FormDialogProps> = ({ onClose }) => {
       toast.info('This form is only a demo and will not be processed.');
       form.reset();
       onClose();
-    } catch (error) {
+    } catch {
       toast.error('Something went wrong. Please try again.');
     } finally {
       setLoading(false);

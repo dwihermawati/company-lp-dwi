@@ -2,16 +2,17 @@ import Image from 'next/image';
 import React from 'react';
 
 import { Section } from '@/components/layouts/section';
-import { Marquee } from '@/components/ui/marquee';
-import { trustedCompaniesData } from '@/constants/trusted-companies-data';
 import {
   Carousel,
   CarouselContent,
   CarouselDots,
   CarouselItem,
 } from '@/components/ui/carousel';
-import { chunk } from '@/lib/chunk';
+import { Marquee } from '@/components/ui/marquee';
+
+import { trustedCompaniesData } from '@/constants/trusted-companies-data';
 import { generateClamp } from '@/function/generate-clamp';
+import { chunk } from '@/lib/chunk';
 
 const TrustedCompany = () => {
   return (

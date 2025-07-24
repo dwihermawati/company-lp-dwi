@@ -4,8 +4,8 @@ import { Icon } from '@iconify/react';
 import * as AccordionPrimitive from '@radix-ui/react-accordion';
 import * as React from 'react';
 
-import { cn } from '@/lib/utils';
 import { generateClamp } from '@/function/generate-clamp';
+import { cn } from '@/lib/utils';
 
 function Accordion({
   ...props

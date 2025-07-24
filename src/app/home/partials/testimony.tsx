@@ -1,3 +1,7 @@
+import { Icon } from '@iconify/react';
+import Image, { StaticImageData } from 'next/image';
+import React from 'react';
+
 import { Section } from '@/components/layouts/section';
 import {
   Carousel,
@@ -5,11 +9,9 @@ import {
   CarouselItem,
   CarouselNavigation,
 } from '@/components/ui/carousel';
+
 import { testimonialsData } from '@/constants/testimony-data';
 import { generateClamp } from '@/function/generate-clamp';
-import { Icon } from '@iconify/react';
-import Image, { StaticImageData } from 'next/image';
-import React from 'react';
 
 const Testimony = () => {
   return (

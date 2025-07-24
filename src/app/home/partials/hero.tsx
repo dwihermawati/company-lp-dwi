@@ -1,12 +1,14 @@
 'use client';
 
+import { Icon } from '@iconify/react';
+import React, { useState } from 'react';
+
 import DecorationBg from '@/components/hero/DecorationBg';
 import IconPosition from '@/components/hero/IconPosition';
 import { Button } from '@/components/ui/button';
 import DialogOpen from '@/components/ui/dialogOpen';
+
 import { generateClamp } from '@/function/generate-clamp';
-import { Icon } from '@iconify/react';
-import React, { useState } from 'react';
 
 const Hero = () => {
   const [isDialogOpen, setIsDialogOpen] = useState(false);

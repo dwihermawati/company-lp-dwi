@@ -1,12 +1,10 @@
 'use client';
 
-import { Section } from '@/components/layouts/section';
-import { Button } from '@/components/ui/button';
-import { modulesData } from '@/constants/module';
-import { generateClamp } from '@/function/generate-clamp';
-import { cn } from '@/lib/utils';
+import { XIcon } from 'lucide-react';
 import Image, { StaticImageData } from 'next/image';
 import React, { useState } from 'react';
+
+import { Section } from '@/components/layouts/section';
 import {
   AlertDialog,
   AlertDialogAction,
@@ -17,7 +15,11 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
 } from '@/components/ui/alert-dialog';
-import { XIcon } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+
+import { modulesData } from '@/constants/module';
+import { generateClamp } from '@/function/generate-clamp';
+import { cn } from '@/lib/utils';
 
 const Module = () => {
   const [dialogOpen, setDialogOpen] = useState(false);

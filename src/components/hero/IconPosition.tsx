@@ -1,7 +1,6 @@
 import React from 'react';
 
 import { generateClamp } from '@/function/generate-clamp';
-import { generateClampInverse } from '@/function/generate-clamp-inverse';
 
 const IconPosition = () => {
   return (

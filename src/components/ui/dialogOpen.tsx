@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import { XIcon } from 'lucide-react';
+import React from 'react';
 
 import {
   Dialog,
@@ -7,7 +8,7 @@ import {
   DialogTitle,
   DialogClose,
 } from '@/components/ui/dialog';
-import { XIcon } from 'lucide-react';
+
 import FormDialog from './formDialog';
 
 type DialogOpenProps = {

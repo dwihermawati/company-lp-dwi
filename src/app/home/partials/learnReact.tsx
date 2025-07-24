@@ -1,10 +1,12 @@
-import { Button } from '@/components/ui/button';
-import { iconTechData } from '@/constants/icon-tech-stack';
-import { generateClamp } from '@/function/generate-clamp';
 import { Icon } from '@iconify/react';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+
+import { Button } from '@/components/ui/button';
+
+import { iconTechData } from '@/constants/icon-tech-stack';
+import { generateClamp } from '@/function/generate-clamp';
 
 const LearnReact = () => {
   return (

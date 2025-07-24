@@ -1,6 +1,7 @@
+import React from 'react';
+
 import { generateClamp } from '@/function/generate-clamp';
 import { cn } from '@/lib/utils';
-import React from 'react';
 
 type CardCodingJourneyProps = {
   title: string;

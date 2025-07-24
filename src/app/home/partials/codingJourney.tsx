@@ -1,19 +1,21 @@
 'use client';
 
-import { Section } from '@/components/layouts/section';
-import CardCodingJourney from '@/components/ui/cardCodingJourney';
-import { generateClamp } from '@/function/generate-clamp';
-import React, { useState } from 'react';
-import Image from 'next/image';
-import { masterCodingIconData } from '@/constants/master-coding';
 import { Icon } from '@iconify/react';
-import { generateClampInverse } from '@/function/generate-clamp-inverse';
-import { provenResultData } from '@/constants/proven-result';
-import { iconTechData } from '@/constants/icon-tech-stack';
-import { Button } from '@/components/ui/button';
-import { CountUp } from '@/components/ui/countUp';
+import Image from 'next/image';
 import Link from 'next/link';
+import React, { useState } from 'react';
+
+import { Section } from '@/components/layouts/section';
+import { Button } from '@/components/ui/button';
+import CardCodingJourney from '@/components/ui/cardCodingJourney';
+import { CountUp } from '@/components/ui/countUp';
 import DialogOpen from '@/components/ui/dialogOpen';
+
+import { iconTechData } from '@/constants/icon-tech-stack';
+import { masterCodingIconData } from '@/constants/master-coding';
+import { provenResultData } from '@/constants/proven-result';
+import { generateClamp } from '@/function/generate-clamp';
+import { generateClampInverse } from '@/function/generate-clamp-inverse';
 
 const CodingJourney = () => {
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);

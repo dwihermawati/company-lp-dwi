@@ -1,6 +1,12 @@
 import { StaticImageData } from 'next/image';
 
 import TrustedCompany1 from '../../public/images/trusted-logo-1.png';
+import TrustedCompany10 from '../../public/images/trusted-logo-10.png';
+import TrustedCompany11 from '../../public/images/trusted-logo-11.png';
+import TrustedCompany12 from '../../public/images/trusted-logo-12.png';
+import TrustedCompany13 from '../../public/images/trusted-logo-13.png';
+import TrustedCompany14 from '../../public/images/trusted-logo-14.png';
+import TrustedCompany15 from '../../public/images/trusted-logo-15.png';
 import TrustedCompany2 from '../../public/images/trusted-logo-2.png';
 import TrustedCompany3 from '../../public/images/trusted-logo-3.png';
 import TrustedCompany4 from '../../public/images/trusted-logo-4.png';
@@ -9,12 +15,6 @@ import TrustedCompany6 from '../../public/images/trusted-logo-6.png';
 import TrustedCompany7 from '../../public/images/trusted-logo-7.png';
 import TrustedCompany8 from '../../public/images/trusted-logo-8.png';
 import TrustedCompany9 from '../../public/images/trusted-logo-9.png';
-import TrustedCompany10 from '../../public/images/trusted-logo-10.png';
-import TrustedCompany11 from '../../public/images/trusted-logo-11.png';
-import TrustedCompany12 from '../../public/images/trusted-logo-12.png';
-import TrustedCompany13 from '../../public/images/trusted-logo-13.png';
-import TrustedCompany14 from '../../public/images/trusted-logo-14.png';
-import TrustedCompany15 from '../../public/images/trusted-logo-15.png';
 
 type TrustedCompanyImageProps = {
   src: StaticImageData;
